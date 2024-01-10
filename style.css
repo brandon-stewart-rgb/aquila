@@ -3,8 +3,8 @@
 /*
 Theme Name: Aquila
 Theme URI: localhost
-Author: the WordPress team
-Author URI: Brandon Stewart
+Author: Brandon Stewart
+Author URI: 
 Description: WP Blogging Theme
 Version: 1.0
 Requires at least: 5.0
@@ -16,3 +16,6 @@ Text Domain: aquila
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+body {
+    color: red;
+}
