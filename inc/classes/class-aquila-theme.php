@@ -14,12 +14,17 @@
 
     protected function __construct() {
        // load class. 
-       wp_die('hello');
-        $this->set_hooks();
+    //    wp_die('hello');
+
+        Assets::get_instance();
+
+        $this->setup_hooks();
     }
 
-    protected function set_hooks(){
-        // action and filters
+    protected function setup_hooks(){
+    
     }
+    
+    
 
  }

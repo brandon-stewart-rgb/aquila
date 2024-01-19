@@ -81,5 +81,7 @@ $user_one = User::get_instance();
 $user_two = User::get_instance();
 
 ?>
+
+<!-- /trait combined with singleton -->
   <?php 
   get_footer();

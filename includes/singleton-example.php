@@ -22,3 +22,5 @@ class User {
 $user1 = User::get_instance();
 $user2 = User::get_instance();
 $user3 = User::get_instance();
+
+

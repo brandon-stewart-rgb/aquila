@@ -39,11 +39,6 @@ function autoloader( $resource = '' ) {
 	if ( empty( $path[0] ) || empty( $path[1] ) ) {
 		return;
 	}
-	
- //check path directory:
-	// echo '<pre>';
-	// print_r( $path);
-	// wp_die();
 
 	$directory = '';
 	$file_name = '';
