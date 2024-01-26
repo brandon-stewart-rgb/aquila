@@ -13,9 +13,9 @@
     use Singleton;
 
     protected function __construct() {
-       // load class. 
+       // Load class. 
         Assets::get_instance();
-
+        Menus::get_instance();
         $this->setup_hooks();
     }
 
@@ -26,6 +26,8 @@
     }
     
     public function setup_theme(){
+
+      
       add_theme_support( 'title-tag' );
 
       add_theme_support( 'custom-logo', [
@@ -47,6 +49,7 @@
 
       add_theme_support( 'automatic-feed-links');
 
+//outputs valid HTML5 
       add_theme_support( 
          'html5',
          [
@@ -63,7 +66,14 @@
 
       add_theme_support( 'wp-block-styles' );
 
+      // full width image support
       add_theme_support( 'align-wide' );
+
+      // sets max width for all content
+      global $content_width;
+      if ( ! isset( $content_width )) {
+         $content_width = 1240;
+      }
     }
 
  }
